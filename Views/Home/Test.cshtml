@@ -1,0 +1,26 @@
+@model test_analytics.Models.TestViewModel;
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StartDate)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.StartDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EndDate)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.EndDate)
+        </div>
+    </fieldset>
+    <input type="submit" value="Hola"/>
+}
+

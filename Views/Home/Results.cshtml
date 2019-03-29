@@ -1,0 +1,14 @@
+@model System.Collections.Generic.List<string>;
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<ul>
+    @foreach (var result in Model)
+    {
+        <li>@result</li>
+    }
+</ul>
+
+<a asp-action="Test">Go back</a>

@@ -1,0 +1,5 @@
+analytics-creds.json
+.vscode
+bin
+obj
+appsettings.Development.json
